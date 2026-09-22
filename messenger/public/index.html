@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Messenger</title>
+ <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ---------------- Login / Register screen ---------------- -->
+ <div id="authScreen" class="auth-screen">
+    <div class="auth-card">
+      <h1 class="brand">Messenger</h1>
+      <p class="muted">Chat with people in real time.</p>
+
+      <div class="tabs">
+        <button id="tabLogin" class="tab active">Log in</button>
+        <button id="tabRegister" class="tab">Sign up</button>
+      </div>
+
+      <form id="authForm" autocomplete="off">
+        <div class="field">
+          <label for="username">Username</label>
+          <input id="username" name="username" placeholder="e.g. alex" required />
+        </div>
+
+        <div class="field" id="displayNameField" style="display:none">
+          <label for="displayName">Display name</label>
+          <input id="displayName" name="displayName" placeholder="Alex Kumar" />
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="At least 6 characters"
+            required
+          />
+        </div>
+
+        <button id="authSubmit" class="primary" type="submit">Log in</button>
+        <p id="authError" class="error" role="alert"></p>
+      </form>
+    </div>
+ </div>
+
+  <!-- ---------------------- Chat application ---------------------- -->
+ <div id="app" class="app" style="display:none">
+    <div id="connBanner" class="conn-banner" style="display:none">
+      Connecting to the server&hellip;
+    </div>
+    <aside class="sidebar">
+      <header class="sidebar-head">
+        <div class="me">
+          <div class="avatar" id="meAvatar">?</div>
+          <div>
+            <div class="me-name" id="meName">Me</div>
+            <div class="me-status" id="meStatus">online</div>
+          </div>
+        </div>
+        <button id="logoutBtn" class="ghost" title="Log out">Log out</button>
+      </header>
+
+      <div class="search">
+        <input id="searchInput" placeholder="Search people..." />
+      </div>
+
+      <ul id="conversationList" class="conversation-list"></ul>
+    </aside>
+
+    <main class="chat">
+      <div id="emptyState" class="empty-state">
+        <h2>Select a conversation</h2>
+        <p class="muted">Pick someone on the left to start chatting.</p>
+      </div>
+
+      <section id="chatPanel" class="chat-panel" style="display:none">
+        <header class="chat-head">
+          <div class="avatar" id="peerAvatar">?</div>
+          <div>
+            <div class="peer-name" id="peerName">—</div>
+            <div class="peer-status" id="peerStatus">offline</div>
+          </div>
+        </header>
+
+        <div id="messages" class="messages"></div>
+
+        <form id="messageForm" class="composer">
+          <input
+            id="messageInput"
+            placeholder="Type a message..."
+            autocomplete="off"
+          />
+          <button type="submit" class="primary">Send</button>
+        </form>
+      </section>
+    </main>
+ </div>
+
+ <script src="app.js"></script>
+</body>
+</html>

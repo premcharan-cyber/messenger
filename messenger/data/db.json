@@ -1,0 +1,159 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "real_a_356891",
+      "displayName": "User One",
+      "passwordHash": "6288af6323962a4de506636ff9789022$31faa9a93b5d47de0de42238d06a6ead8615ce91b745c4671ad537e38872dc87b0f7ec2b10d74e9615a96d27d863389487befb5c9266dd0604540357451aedc6",
+      "createdAt": 1790018357.03254
+    },
+    {
+      "id": 2,
+      "username": "real_b_356891",
+      "displayName": "User Two",
+      "passwordHash": "a512ec5352e872d878b7057111cfd98d$938a75f6454a9e9030cdf280ddc9253e61601361451eec8adb8d4bc6d7ac280418a43c104359b5a3a3e01f3806856dcf45d218933100b7c55c15a828d055053e",
+      "createdAt": 1790018357.474099
+    },
+    {
+      "id": 3,
+      "username": "prem",
+      "displayName": "prem",
+      "passwordHash": "018e0d347b44ef515782027e625fa1e2$72486e51ef5118f801dc8bdb6a65b650fd2a133bc02ab0fd4df53cb99b6e6b531df5699c5719bf5970400e23f82ce631609d544fc0230e767892213679263774",
+      "createdAt": 1790018733.0098598
+    },
+    {
+      "id": 4,
+      "username": "hello",
+      "displayName": "hello",
+      "passwordHash": "7e27a00ef13d6689df9a66b428ce6c70$69181093718824eed323c5dc371dfa524d1f1992fa735cb6ae26115613519c9a41c636eb7d7fd2ba7d0075be9893475328f93bbb5d475a7090de3bc0a5fc68a3",
+      "createdAt": 1790018967.931712
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "conversationId": "1-2",
+      "from": 1,
+      "to": 2,
+      "text": "Hi, this is a real message from user one",
+      "at": 1790018357670,
+      "read": true
+    },
+    {
+      "id": 2,
+      "conversationId": "1-2",
+      "from": 2,
+      "to": 1,
+      "text": "Got it - this is user two replying",
+      "at": 1790018357753,
+      "read": true
+    },
+    {
+      "id": 3,
+      "conversationId": "1-3",
+      "from": 3,
+      "to": 1,
+      "text": "hi",
+      "at": 1790018754532,
+      "read": false
+    },
+    {
+      "id": 4,
+      "conversationId": "2-3",
+      "from": 3,
+      "to": 2,
+      "text": "hello",
+      "at": 1790018760136,
+      "read": false
+    },
+    {
+      "id": 5,
+      "conversationId": "3-4",
+      "from": 4,
+      "to": 3,
+      "text": "hiiiiiiiiiiiii",
+      "at": 1790018978547,
+      "read": true
+    },
+    {
+      "id": 6,
+      "conversationId": "3-3",
+      "from": 3,
+      "to": 3,
+      "text": "how are you",
+      "at": 1790018987429,
+      "read": true
+    },
+    {
+      "id": 7,
+      "conversationId": "3-4",
+      "from": 4,
+      "to": 3,
+      "text": "how are you",
+      "at": 1790019001860,
+      "read": true
+    },
+    {
+      "id": 8,
+      "conversationId": "3-3",
+      "from": 3,
+      "to": 3,
+      "text": "helloooooooooooo",
+      "at": 1790019012977,
+      "read": true
+    },
+    {
+      "id": 9,
+      "conversationId": "3-4",
+      "from": 3,
+      "to": 4,
+      "text": "hhhhhhhhhhhhhhhhhhhhhhhh",
+      "at": 1790019082249,
+      "read": true
+    },
+    {
+      "id": 10,
+      "conversationId": "3-4",
+      "from": 4,
+      "to": 3,
+      "text": "pppppppppppppppppppppppppppp",
+      "at": 1790019090186,
+      "read": true
+    },
+    {
+      "id": 11,
+      "conversationId": "3-4",
+      "from": 3,
+      "to": 4,
+      "text": "lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll",
+      "at": 1790019102677,
+      "read": true
+    }
+  ],
+  "sessions": {
+    "4JgXU_Qdn-lHwHAxdHb1UvO6EO0wfpQM6vATQoHO7G4": {
+      "userId": 1,
+      "createdAt": 1790018357.0334418
+    },
+    "9YrCx081MEIhBD9lQeHua-xn2X5tMnpZ4Je0j8zeh0g": {
+      "userId": 2,
+      "createdAt": 1790018357.4749827
+    },
+    "5LVwAoI2XjOvtPzUIGI1V5m-heYu_eDlY75Py_ZNzto": {
+      "userId": 3,
+      "createdAt": 1790018733.01387
+    },
+    "tczoTzPSu1qerCWQUmw0ZAG4T6YDWVIIQtl2wcwRxL8": {
+      "userId": 3,
+      "createdAt": 1790018849.9990542
+    },
+    "W8QZzRBuWxcbxR8pqQY9NNTrqwzyNlT2uXDj-eXB5DI": {
+      "userId": 3,
+      "createdAt": 1790019060.9972415
+    }
+  },
+  "lastIds": {
+    "user": 4,
+    "message": 11
+  }
+}
